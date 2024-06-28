@@ -1,0 +1,658 @@
+:root {
+    --main-color: #03A4ED;
+    --bg-color: #000000;
+    --second-bg-color: #031923;
+    --third-bg-color: #614392;
+    --fourth-bg-color: #063246;
+    --text-color: white;
+    --stars-color: yellow;
+}
+
+@media only screen and (max-width: 480px) {
+
+
+
+    header,
+    html,
+    body {
+        width: 100%;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    header nav .container .navbar-brand .logo {
+        width: 100px;
+        cursor: pointer;
+        position: absolute;
+        left: 8px;
+        top: -10px;
+    }
+
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+    }
+
+    .home .home-left-container {
+        grid-row: 1 / 2;
+        position: relative;
+        top: .7rem;
+        left: 0;
+        max-width: 300px;
+        padding: 1rem;
+    }
+
+    .home .home-right-container {
+        grid-row: 2 / 3;
+        position: relative;
+        top: -2.6rem;
+        left: 0;
+        max-width: 300px;
+        padding: 1rem;
+    }
+
+    .home .home-left-container h1 {
+        font-size: 2rem;
+        line-height: 45px;
+        max-width: 250px;
+    }
+
+    .home .home-left-container p {
+        font-size: .8rem;
+        max-width: 250px;
+    }
+
+    .batena {
+        padding: 8px 30px;
+        font-size: .8rem;
+    }
+
+    .home .home-right-container img {
+        width: 330px;
+        margin-left: -.8rem;
+    }
+
+
+    .ceo {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .ceo .ceo-left-container {
+        grid-row: 1 / 2;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .ceo-left-container .line {
+        left: -2.3rem;
+        top: 11.5rem;
+    }
+
+    .ceo-left-container p,
+    .ceo-left-container .ceo-content p {
+        font-size: .8rem;
+        margin-bottom: 1rem;
+        max-width: 300px;
+    }
+
+    .ceo-left-container h1 {
+        font-size: 2rem;
+    }
+
+    .ceo-left-container p,
+    .ceo-left-container input,
+    .ceo-left-container label {
+        position: relative;
+        left: .5rem;
+        top: 37rem;
+        text-wrap: wrap;
+        max-width: 300px;
+    }
+
+    .readm-btn {
+        margin-left: -13rem;
+
+    }
+
+    .ceo-right-container img {
+        position: absolute;
+        left: 3rem;
+        top: 53rem;
+        width: 290px;
+    }
+
+
+
+    .cards {
+        padding: .5rem;
+        padding-top: 5rem;
+    }
+
+    .cards .cards-heading p {
+        font-size: 17px;
+        row-gap: 1rem;
+        max-width: 200px;
+    }
+
+    .cards .cards-heading .lines {
+        top: 14px;
+    }
+
+    .cards .cards-heading h3 {
+        font-size: 1.25rem;
+        row-gap: .7rem;
+    }
+
+    .cards .cards-crd {
+        flex-direction: column;
+        gap: 1.3rem;
+        padding: 0;
+    }
+
+    .cards .cards-crd .cardBx {
+        width: 295px;
+        height: 370px;
+        gap: 1rem;
+        margin-left: -1.9rem;
+        margin-top: 1.5rem;
+    }
+
+    .cards .cards-crd .cardBx .cardBx-circle {
+        width: 110px;
+        height: 110px;
+    }
+
+    .cards .cards-crd .cardBx .cardBx-content h2 {
+        font-size: 1.5rem;
+        margin-top: -10px;
+    }
+
+    .cards .cards-crd .cardBx .cardBx-content p {
+        font-size: .8rem;
+        row-gap: 5px;
+    }
+
+
+
+    .testimonial {
+        padding: 1rem;
+    }
+
+    .testimonial .testimonial-carousal {
+        flex-direction: column;
+    }
+
+    .testimonial .testimonial-carousal-content {
+        width: 330px;
+        height: 150px;
+        left: -25px;
+        top: 0;
+        max-width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .testimonial .testimonial-carousal-content p {
+        font-size: 17px;
+        row-gap: 1rem;
+        max-width: 300px;
+
+    }
+
+    .testimonial .testimonial-carousal .testimonial-img {
+        position: relative;
+        left: 0rem;
+        height: 200px;
+    }
+
+    #span-arrowL {
+        left: 12rem;
+    }
+    #span-arrow, #span-arrowL{
+        position: relative;
+        top: 9rem;
+    }
+
+
+
+
+
+    .team {
+        padding: 1rem;
+        padding-top: 15rem;
+    }
+
+    .team .team-heading .lines {
+        top: 14px;
+    }
+
+    .team .team-heading p {
+        font-size: 17px;
+        row-gap: 1rem;
+        max-width: 200px;
+    }
+
+    .team .team-heading h3 {
+        font-size: 1.25rem;
+        row-gap: .7rem;
+    }
+
+    .team .team-cards {
+        flex-direction: column;
+        gap: 1.3rem;
+        padding: 0;
+    }
+
+    .team .team-cards .team-personal-card {
+        width: 295px;
+        height: 370px;
+        gap: 1rem;
+        position: relative;
+        left: .3rem;
+        margin-bottom: 2rem;
+    }
+
+    .team .team-cards .team-personal-card .team-imgSection {
+        width: 270px;
+    }
+
+    .team .team-cards .team-personal-card .team-contentSection h3 {
+        font-size: 17px;
+    }
+
+    .team .team-cards .team-personal-card .team-contentSection i {
+        left: 250px;
+    }
+
+
+    .mission {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        padding: 1rem;
+        padding-top: 2rem;
+    }
+
+    .mission .mission-heading h1 {
+        font-size: 2rem;
+    }
+
+    .mission .mission-heading .line {
+        margin-top: -.5rem;
+    }
+
+    .mission .mission-firstPara p,
+    .mission .mission-secondPara p {
+        font-size: .8rem;
+        max-width: 300px;
+    }
+
+    .mission .mission-img {
+        width: 300px;
+    }
+
+    .mission .mission-img img {
+        width: 100%;
+    }
+
+    .moreAboutUs-container {
+        padding: 1rem;
+
+    }
+
+    .moreAboutUs-container .moreAboutUs-box {
+        height: 200px;
+        width: 90%;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .moreAboutUs-container .moreAboutUs-box .moreAboutUs-content {
+        padding: 1.5rem;
+        margin-bottom: .7rem;
+        background-color: transparent;
+        margin-left: 1rem;
+    }
+
+    .moreAboutUs-container .moreAboutUs-box .moreAboutUs-content h3 {
+        font-size: 15px;
+        max-width: 250px;
+        background-color: transparent;
+    }
+
+    .moreAboutUs-container .moreAboutUs-box .moreAboutUs-batena .baten {
+        padding: 10px 15px;
+        font-size: 17px;
+        letter-spacing: 1px;
+        background-color: transparent;
+    }
+
+    .moreAboutUs-container .moreAboutUs-box .moreAboutUs-batena {
+        text-decoration: none;
+        margin-left: 4rem;
+    }
+
+
+
+    .whatWeOffer {
+        display: flex;
+        margin-top: -15rem;
+        padding: 1.4rem;
+        flex-direction: column;
+
+    }
+
+    .whatWeOffer .whatWeOffer-heading .lines {
+        top: 14px;
+    }
+
+    .whatWeOffer .whatWeOffer-heading p {
+        font-size: 17px;
+        max-width: 200px;
+    }
+
+    .whatWeOffer .whatWeOffer-heading h3 {
+        font-size: 1rem;
+        max-width: 250px;
+    }
+
+    .whatWeOffer .whatWeOffer-imgSection {
+        width: 280px;
+    }
+
+    .whatWeOffer .whatWeOffer-contentSection {
+        padding: 1rem;
+        margin-top: -2rem;
+    }
+
+    .whatWeOffer .whatWeOffer-contentSection p {
+        font-size: 15px;
+        margin-top: 1rem;
+        max-width: 300px;
+        font-weight: normal;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+
+
+
+    .whyChooseUs {
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-self: center;
+        align-items: center;
+    }
+
+    .whyChooseUs-contentSection {
+        padding: 3rem;
+    }
+
+    .whyChooseUs-imgSection {
+        padding: 1rem;
+        width: 280px;
+    }
+
+    .whyChooseUs-imgSection img {
+        width: 100%;
+    }
+
+    .whyChooseUs-contentSection-heading h2 span {
+        font-size: 30px;
+    }
+
+    .whyChooseUs-contentSection-para p {
+        font-size: 15px;
+        margin-top: .61rem;
+    }
+
+    .whyChooseUs-contentSection-heading,
+    .whyChooseUs-contentSection-para {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .whyChooseUs-contentSection-experienceSection {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .whyChooseUs-contentSection-experienceSection .wchs-span span {
+        font-size: 20px;
+    }
+
+    .whyChooseUs-contentSection-experienceSection .wchs-h3 h3 {
+        font-size: 13px;
+    }
+
+
+
+
+
+
+
+    .technologies {
+        margin-top: -15rem;
+    }
+
+
+    .technologies .technologies-heading h1 span {
+        font-size: 20px;
+        margin-bottom: 2rem;
+    }
+
+    .technologies .technologies-carousel {
+        padding: .8rem;
+        width: 100%;
+    }
+
+    .technologies .technologies-carousel .technologies-carousel-names {
+        gap: .3rem;
+        font-size: 10px;
+    }
+
+    .technologies-carousel-name,
+    .technologies-carousel-line,
+    .technologies-carousel-divs h3 {
+        display: none;
+    }
+
+    .technologies-carousel-subdivs {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+        width: 350px;
+    }
+
+    .technologies-carousel-divs h3 {
+        display: none;
+    }
+
+    .technologies-carousel-divs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.3rem;
+        width: 40px;
+        height: 40px;
+    }
+
+    .technologies-carousel-divs img {
+        width: 40px;
+        height: 40px;
+        margin-left: 1rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .articles {
+        padding: 1.5rem;
+        padding-top: 0;
+        margin-top: -9rem;
+    }
+
+    .articles .articles-heading .lines {
+        position: relative;
+        top: 14px;
+    }
+
+    .articles .articles-heading p {
+        font-size: 17px;
+        margin-bottom: 10px;
+        max-width: 200px;
+    }
+
+    .articles .articles-heading h3 {
+        font-size: 1.5rem;
+    }
+
+    .articles .articles-crd {
+        flex-direction: column;
+        gap: 1.3rem;
+        padding: 0;
+    }
+
+    .articles .articles-crd .cardBx {
+        width: 295px;
+        height: 420px;
+        gap: 1rem;
+        margin-left: -1.9rem;
+        margin-top: 1.5rem;
+    }
+
+    .articles .articles-crd .cardBx .cardBx-img {
+        height: 200px;
+    }
+
+    .articles .articles-crd .cardBx .cardBx-content {
+        height: 110px;
+        margin-top: -2rem;
+    }
+
+    .articles .articles-crd .cardBx .cardBx-content h2 span {
+        font-size: 15px;
+    }
+
+    .articles .articles-crd .cardBx .cardBx-content p {
+        font-size: 15px;
+    }
+
+    .articles .articles-crd .cardBx .cardBx-content h6 {
+        font-size: 10px;
+    }
+
+    .articles .articles-crd .cardBx .cardBx-ratings {
+        width: 100%;
+        height: 110px;
+        padding: 1rem;
+        margin-left: -19rem;
+        margin-top: 22rem;
+    }
+
+    .articles .articles-crd .cardBx .cardBx-ratings .stars i {
+        font-size: 10px;
+    }
+
+
+
+
+
+
+
+
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1.5rem;
+    }
+
+    footer .div .heading {
+        font-size: 20px;
+    }
+
+    footer .div .line {
+        display: none;
+    }
+
+    footer .bitIntro .content p {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    footer .bitIntro .socialmedia-icons i {
+        padding: 10px 15px;
+        font-size: 15px;
+        margin-left: .2rem;
+        margin-bottom: 1rem;
+    }
+
+    footer .Ftr-contact {
+        margin-left: 1.3rem;
+    }
+
+
+
+
+
+
+    .services{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .services-contentSection .services-heading h1 {
+        font-size: 2rem;
+    }
+    .services-contentSection{
+        
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .services-contentSection .services-contentPara p{
+        font-size: .8rem;
+    }
+    .services-contentSection .services-imgSection img {
+        width: 300px;
+    }
+
+
+
+
+
+}
